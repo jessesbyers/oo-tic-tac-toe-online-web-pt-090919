@@ -107,9 +107,9 @@ end
 def play
   turn until over?
   if won?
-    puts "Congratulations! #{"winner"} won!"
-  else draw?
-    puts "It was a cats game."
+    puts "Congratulations! #{winner} won!"
+  elsif draw?
+    puts "Cat's game."
   end
 end
 end
