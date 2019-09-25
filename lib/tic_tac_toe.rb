@@ -73,10 +73,7 @@ def current_player
   end
 end
 
-###############
 def won?
-  # xs = board.each_index.select{|i| board[i] == 'X'}
-  # os = board.each_index.select{|i| board[i] == 'O'}
   WIN_COMBINATIONS.any? do |combo|
     if position_taken?(combo[0])
       @board[combo[0]] == @board[combo[1]] && @board[combo[1]] == @board[combo[2]]
@@ -85,18 +82,6 @@ def won?
 end
  false
 end
-
-    # binding.pry
-
-    # if xs.include?(a.all?) || os.include?(a.all?)
-    #   win << a
-    # if  xs == a || os == a
-    #   win = a
-    # else
-    #   win = nil
-#   end
-# # win
-# end
 
 def full?
   @board.all? {|e| e != " "}
