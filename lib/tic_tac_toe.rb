@@ -95,7 +95,7 @@ def over?
 end
 
 def winner?
-  won? ? current_player : nil     
+#  won? ? current_player : nil     
 end
 
 def player
