@@ -95,8 +95,21 @@ def over?
 end
 
 def winner
-  !won? ? current_player : nil
+  if won? && turn_count.even?
+    return "X"
+  end
+    if won? && turn_count.odd?
+      return "O"
+    end
 end
+
+# def current_player
+#   if turn_count.even?
+#     return "X"
+#   else
+#     return "O"
+#   end
+# end
 
 def player
 end
