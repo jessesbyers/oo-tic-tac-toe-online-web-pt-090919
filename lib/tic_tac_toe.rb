@@ -113,6 +113,7 @@ def play
   else draw?
     puts "It was a cats game."
   end
+  end
 end
 
 end
