@@ -57,7 +57,7 @@ def turn
     move(index, player = current_player)
     display_board
   else
-    turn until over?
+    turn
   end
 end
 
@@ -104,7 +104,7 @@ def winner
 end
 
 def play
-  until over?
+  until over? do
     turn
   end
   if won?
