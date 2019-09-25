@@ -96,10 +96,10 @@ end
 
 def winner
   if won? && turn_count.even?
-    return "X"
+    return "O"
   end
     if won? && turn_count.odd?
-      return "O"
+      return "X"
     end
 end
 
