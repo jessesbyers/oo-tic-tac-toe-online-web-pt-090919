@@ -105,9 +105,7 @@ def winner
 end
 
 def play
-  until over? do
-    turn
-#  end
+  turn until over?
   if won?
     puts "Congratulations! #{"winner"} won!"
   else draw?
@@ -115,5 +113,4 @@ def play
   end
   end
 end
-
 end
