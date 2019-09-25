@@ -103,15 +103,8 @@ def winner
     end
 end
 
-# def current_player
-#   if turn_count.even?
-#     return "X"
-#   else
-#     return "O"
-#   end
-# end
+def play
 
-def player
 end
 
 end
