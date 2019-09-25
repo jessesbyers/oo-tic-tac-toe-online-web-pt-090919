@@ -59,7 +59,7 @@ def turn
   else
 
     turn until valid_move? do
-    end
+#    end
     #turn
     end
   end
