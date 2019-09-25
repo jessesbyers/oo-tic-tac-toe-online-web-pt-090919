@@ -59,7 +59,7 @@ def turn
     display_board
   else
 
-    turn until valid_move? do
+    turn until valid_move?(index) do
 #    end
     #turn
     end
