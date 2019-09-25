@@ -58,9 +58,10 @@ def turn
     display_board
   else
 
-    # until over? do turn
-    # end
-    turn
+    turn until valid_move? do
+    end
+    #turn
+    end
   end
 end
 
