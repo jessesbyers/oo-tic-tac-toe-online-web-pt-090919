@@ -58,6 +58,7 @@ def turn
     display_board
   else
     until over? do turn
+    end
   end
 end
 
