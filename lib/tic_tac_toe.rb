@@ -107,6 +107,7 @@ end
 def play
   until over? do
     turn
+    over?
   end
   if won?
     puts "Congratulations! You won!"
