@@ -107,7 +107,7 @@ end
 def play
   until over? do
     turn
-#  end
+  end
   if won?
     puts "Congratulations! You won!"
   else draw?
