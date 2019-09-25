@@ -63,7 +63,7 @@ def turn
     # until valid_move?(index) do
 #    end
     #turn
-    end
+    # end
   end
 end
 
