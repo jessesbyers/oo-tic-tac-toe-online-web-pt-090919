@@ -110,7 +110,7 @@ def play
     over?
   end
   if won?
-    puts "Congratulations! You won!"
+    puts "Congratulations! #{"winner"} won!"
   else draw?
     puts "It was a cats game."
   end
