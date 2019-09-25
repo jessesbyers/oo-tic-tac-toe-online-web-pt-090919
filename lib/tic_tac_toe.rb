@@ -47,7 +47,7 @@ end
 
 def valid_move?(index)
   index.between?(0,8) && !position_taken?(index)
-  # (0..8).covers?(index) 
+  # (0..8).covers?(index)
 end
 
 def turn
@@ -59,7 +59,8 @@ def turn
     display_board
   else
 
-    turn until valid_move?(index) do
+    turn
+    # until valid_move?(index) do
 #    end
     #turn
     end
