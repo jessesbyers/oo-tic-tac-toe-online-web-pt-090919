@@ -32,7 +32,6 @@ def input_to_index(input)
   index
 end
 
-# player = "X"
 def move(index, player)
   @board[index] = player
 end
@@ -92,7 +91,7 @@ def draw?
 end
 
 def over?
-  full? || draw?
+  full? || draw? || won?
 end
 
 def winner
