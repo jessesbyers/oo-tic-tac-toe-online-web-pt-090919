@@ -104,7 +104,14 @@ def winner
 end
 
 def play
-
+  until over?
+    turn
+  end
+  if won?
+    puts "Congratulations! You won!"
+  else draw?
+    puts "It was a cats game."
+  end
 end
 
 end
