@@ -107,14 +107,13 @@ end
 def play
   until over? do
     turn
-    won?
-  end
+#  end
   if won?
     puts "Congratulations! #{"winner"} won!"
   else draw?
     puts "It was a cats game."
   end
   end
-#end
+end
 
 end
